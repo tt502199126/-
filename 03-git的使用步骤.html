@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	1. 在本地创建一个装代码的仓库（是空）   git init
+	2. 把本地的代码提交到本地仓库里面
+		1. 先告诉git 哪些源代码需要提交到仓库里面
+			git add index.html index.css index.js（如果有多个空格隔开）
+			除了添加某个文件之外 还可以添加所有文件
+			git add .
+		2. 把添加到git管理的文件 提交到本地仓库里面  后面的引号里面是提交日志（通常写一些谁提交的 或者第几次提交 或者修改了什么功能....）
+			git commit -m '老王第一次'
+	3. 把本地仓库代码提交到服务器上
+		1. 指定要提交到的服务器的仓库
+		git remote add origin https://github.com/zwxs/demo2.git
+		2. 把本地仓库的代码提交到服务器的仓库里面
+		git push -u origin master
+
+	当本地代码修改之后再次提交
+		1. 把修改或者添加的代码添加到git管理
+			git add .
+		2. 把新添加的代码提交到本地的仓库
+			git commit -m '老王第二次'
+		3. 把本地仓库的最新代码 提交到服务器
+			git push -u origin master   （意思是把本地代码推送（提交）到远端的master分支）
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	1. 在本地创建一个装代码的仓库（是空）   git init
+	2. 把本地的代码提交到本地仓库里面
+		1. 先告诉git 哪些源代码需要提交到仓库里面
+			git add .
+		2. 把添加到git管理的文件 提交到本地仓库里面  后面的引号里面是提交日志（通常写一些谁提交的 或者第几次提交 或者修改了什么功能....）
+			git commit -m '老王第一次'
+	3. 把本地仓库代码提交到服务器上
+		1. 指定要提交到的服务器的仓库
+		git remote add origin git@github.com:zwxs/weijinsuo123.git
+		2. 把本地仓库的代码提交到服务器的仓库里面
+		git push -u origin master
+	4. 创建一个gh-pages的分支
+		git branch gh-pages
+	5. 切换到gh-pages的分支
+		git checkout gh-pages
+	6. 把代码提交到gh-pages分支
+		git push -u origin gh-pages
+	7. 打开线上网站
+		用户名.github.io/仓库名     (注意仓库名用小写并且不要有特殊符号-之类的)
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	1. 先创建一个老王的分支
+		git branch laowang
+	2. 切换到老王的分支里面
+		git checkout laowang
+	3. 写老王特殊的页面 添加到老王的分支里面
+		git add .
+	4. 把老王特殊页面提交到老王分支里面
+		git commit -m '老王第一次提交到老王分支'
+	5. 需要把老王的分支的代码提交服务器
+		 git push -u origin laowang
+	6. 合并分支 
+		1. 先要进入到要合并分支的 分支(主分支)  git checkout master
+		2. 通过命令 要合并谁  git merge laowang  (会把laowang分支的代码合并到主分支里面)
+		3. git add . 重新添加
+		4. git commit -m '重新提交'
+		5. git push -u origin master  提交到服务器
+</body>
+</html>
